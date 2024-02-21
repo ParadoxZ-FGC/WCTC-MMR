@@ -25,6 +25,15 @@ div.player {
   background-color: azure;
   box-shadow: 4px 4px 6px black;
 }
-
+input[type=text] {
+  background-color: white;
+  border: none;
+  border-bottom: solid 2px blue;
+  border-radius: 6px;
+}
+input[type=submit] {
+  background-color: darkblue;
+  color: white;
+}
 
 
