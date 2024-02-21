@@ -20,6 +20,7 @@ div.content-header {
 
 div.player {
   width: 100%;
+  margin: 1em;
   padding: 6px 2em;
   background-color: azure;
   box-shadow: 4px 4px 6px black;
