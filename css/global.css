@@ -13,12 +13,14 @@ div.content {
   margin: 1em auto;
   padding: 3em;
   background-color: lightgray;
+  border-radius: 1em;
 }
 
 div.content-header {
   width: 100%;
   padding: 2px 2em;
   background-color: white;
+  border-radius: 1em;
   box-shadow: 4px 4px 6px black;
 }
 
