@@ -4,3 +4,14 @@ body {
   background-color: lightblue;
 }
 
+div.content {
+  max-width: 1280px;
+}
+
+div.content-header {
+  width: 100%;
+  padding: 1em;
+  background-color: azure;
+  box-shadow: 4px 4px 6px black;
+}
+  
