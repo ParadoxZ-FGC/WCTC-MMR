@@ -6,6 +6,7 @@ body {
   background-color: lightblue;
 }
 
+
 div.content {
   max-width: 1280px;
 }
@@ -16,4 +17,13 @@ div.content-header {
   background-color: azure;
   box-shadow: 4px 4px 6px black;
 }
-  
+
+div.player {
+  width: 100%;
+  padding: 6px 2em;
+  background-color: azure;
+  box-shadow: 4px 4px 6px black;
+}
+
+
+
