@@ -1,5 +1,7 @@
 /* Global CSS */
-
+* {
+  font-family: "Trebuchet MS";
+}
 body {
   background-color: lightblue;
 }
@@ -10,7 +12,7 @@ div.content {
 
 div.content-header {
   width: 100%;
-  padding: 1em;
+  padding: 6px 2em;
   background-color: azure;
   box-shadow: 4px 4px 6px black;
 }
