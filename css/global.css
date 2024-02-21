@@ -24,6 +24,12 @@ div.content-header {
   box-shadow: 4px 4px 6px black;
 }
 
+
+form {
+  background-color: azure;
+  padding: 2em;
+}
+
 div.player {
   width: 100%;
   margin: 1em;
