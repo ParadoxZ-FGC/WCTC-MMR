@@ -40,3 +40,8 @@ input[type=submit] {
 }
 
 
+@media screen and (max-width=1024px) {
+  div.content {
+    max-width: 840px;
+  }
+}
