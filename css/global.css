@@ -26,10 +26,10 @@ div.player {
   box-shadow: 4px 4px 6px black;
 }
 input[type=text] {
-  background-color: white;
+  background-color: azure;
   border: none;
-  border-bottom: solid 2px blue;
-  border-radius: 6px;
+  border-bottom: solid 2px darkblue;
+  border-radius: 0;
 }
 input[type=submit] {
   background-color: darkblue;
