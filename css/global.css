@@ -13,14 +13,14 @@ div.content {
   margin: 1em auto;
   padding: 3em;
   background-color: lightgray;
-  border-radius: 1em;
+  border-radius: 3em;
 }
 
 div.content-header {
   width: 100%;
   padding: 2px 2em;
   background-color: white;
-  border-radius: 1em;
+  border-radius: 2em;
   box-shadow: 4px 4px 6px black;
 }
 
@@ -28,6 +28,7 @@ div.content-header {
 form {
   background-color: azure;
   padding: 2em;
+  margin: 2em 0;
 }
 
 div.player {
