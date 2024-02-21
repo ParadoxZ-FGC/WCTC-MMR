@@ -13,7 +13,16 @@
     </div>
 
     <div class="content-main">
-      <form>
+      <form id="add">
+        <label for="new-un">Username:</label>
+        <input type="text" id="new-un" name="new-un" placeholder="Enter new player's tag..." required>
+        <label for="new-user-char">Character:</label>
+        <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." required>
+        <label for="new-user-school">School:</label>
+        <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." required>
+        <input type="submit" value="submit" onclick="alert("hai")">
+      </form>
+      <form id="modify">
         <div class="player" id="p1">
           <h2>Player 1</h2>
           <label for="p1-fname">First Name:</label>
