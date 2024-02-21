@@ -16,8 +16,8 @@ div.content {
 
 div.content-header {
   width: 100%;
-  padding: 6px 2em;
-  background-color: azure;
+  padding: 2px 2em;
+  background-color: white;
   box-shadow: 4px 4px 6px black;
 }
 
@@ -25,17 +25,17 @@ div.player {
   width: 100%;
   margin: 1em;
   padding: 6px 2em;
-  background-color: azure;
+  background-color: white;
   box-shadow: 4px 4px 6px black;
 }
 input[type=text] {
-  background-color: azure;
+  background-color: white;
   border: none;
-  border-bottom: solid 2px darkblue;
+  border-bottom: solid 2px black;
   border-radius: 0;
 }
 input[type=submit] {
-  background-color: darkblue;
+  background-color: black;
   color: white;
 }
 
