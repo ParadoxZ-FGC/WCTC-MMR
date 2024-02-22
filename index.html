@@ -16,16 +16,16 @@
       </div>
   
       <div class="content-main">
-        <form id="add">
+        <form id="add" method="POST" action="https://script.google.com/macros/s/AKfycbxw51A6itTMEXp9Lj9Q7OkVMjDtoNsGB2GmTzLUyjqJ_wriPVn5Gm9xc6IEy5DBfb0tTg/exec">
           <h2 class="section-title">Add New User</h2>
           <div id="newp">
-            <label for="new-un">Username:</label>
-            <input type="text" id="new-un" name="new-un" placeholder="Enter new player's tag..." maxlength="28" required>
+            <label for="new-user-name">Username:</label>
+            <input type="text" id="new-user-name" name="new-user-name" placeholder="Enter new player's tag..." maxlength="28" required>
             <label for="new-user-char">Character:</label>
             <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." maxlength="28" required>
             <label for="new-user-school">School:</label>
             <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." maxlength="28" required>
-            <input type="submit" value="Submit" onclick="alert("hai")">
+            <input type="submit" value="Submit" id="add-new-user" onclick="addUser()">
           </div>
         </form>
         <form id="modify">
