@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="icon" type="image/png" href="assets/smash_ball.png">
-  <title>WCTC MMR Info Submission</title>
-</head>
-
-<body>
-  <div class="content">
-    <div class="content-header">
-      <h1>WCTC Smash Team Rating</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" type="image/png" href="assets/smash_ball.png">
+    <title>WCTC MMR Info Submission</title>
+  </head>
+  
+  <body>
+    <div class="content">
+      <div class="content-header">
+        <h1>WCTC Smash Team Rating</h1>
+      </div>
+  
+      <div class="content-main">
+        <form id="add">
+          <h2 class="section-title">Add New User</h2>
+          <div id="newp">
+            <label for="new-un">Username:</label>
+            <input type="text" id="new-un" name="new-un" placeholder="Enter new player's tag..." maxlength="28" required>
+            <label for="new-user-char">Character:</label>
+            <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." maxlength="28" required>
+            <label for="new-user-school">School:</label>
+            <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." maxlength="28" required>
+            <input type="submit" value="Submit" onclick="alert("hai")">
+          </div>
+        </form>
+        <form id="modify">
+          <h2 class="section-title">Update Rankings</h2>
+          <div class="player" id="p1">
+            <h3>Player 1</h3>
+            <label for="p1-user-name">Username:</label>
+            <input type="text" id="p1-user-name" name="p1-user-name" placeholder="Enter first player's tag..." maxlength="28" required>
+            <label for="p1-win">Win</label>
+            <input type="radio" id="p1-win" name="p1-winlose" value="Win" required>
+            <label for="p1-lose">Lose</label>
+            <input type="radio" id="p1-lose" name="p1-winlose" value="Lose" required>
+          </div>
+          <div class="player" id="p2">
+            <h3>Player 2</h3>
+            <label for="p2-user-name">Username:</label>
+            <input type="text" id="p2-user-name" name="p2-user-name" placeholder="Enter second player's tag..." maxlength="28" required>
+            <label for="p2-win">Win</label>
+            <input type="radio" id="p2-win" name="p2-winlose" value="Win" required>
+            <label for="p2-lose">Lose</label>
+            <input type="radio" id="p2-lose" name="p2-winlose" value="Lose" required>
+          </div>
+          <input type="submit" value="Submit" onclick="alert(":3")">
+        </form>
+      </div>
+  
+      <div class="content-footer">
+        <em>&copy; developed by Noah Strekow (paradox) | 2024</em>
+      </div>
     </div>
-
-    <div class="content-main">
-      <form id="add">
-        <h2 class="section-title">Add New User</h2>
-        <div id="newp">
-          <label for="new-un">Username:</label>
-          <input type="text" id="new-un" name="new-un" placeholder="Enter new player's tag..." maxlength="28" required>
-          <label for="new-user-char">Character:</label>
-          <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." maxlength="28" required>
-          <label for="new-user-school">School:</label>
-          <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." maxlength="28" required>
-          <input type="submit" value="Submit" onclick="alert("hai")">
-        </div>
-      </form>
-      <form id="modify">
-        <h2 class="section-title">Update Rankings</h2>
-        <div class="player" id="p1">
-          <h3>Player 1</h3>
-          <label for="p1-user-name">Username:</label>
-          <input type="text" id="p1-user-name" name="p1-user-name" placeholder="Enter first player's tag..." maxlength="28" required>
-          <label for="p1-win">Win</label>
-          <input type="radio" id="p1-win" name="p1-winlose" value="Win" required>
-          <label for="p1-lose">Lose</label>
-          <input type="radio" id="p1-lose" name="p1-winlose" value="Lose" required>
-        </div>
-        <div class="player" id="p2">
-          <h3>Player 2</h3>
-          <label for="p2-user-name">Username:</label>
-          <input type="text" id="p2-user-name" name="p2-user-name" placeholder="Enter second player's tag..." maxlength="28" required>
-          <label for="p2-win">Win</label>
-          <input type="radio" id="p2-win" name="p2-winlose" value="Win" required>
-          <label for="p2-lose">Lose</label>
-          <input type="radio" id="p2-lose" name="p2-winlose" value="Lose" required>
-        </div>
-        <input type="submit" value="Submit" onclick="alert(":3")">
-      </form>
-    </div>
-
-    <div class="content-footer">
-      <em>&copy; developed by Noah Strekow (paradox) | 2024</em>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
