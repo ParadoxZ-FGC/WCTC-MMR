@@ -9,48 +9,48 @@
 <body>
   <div class="content">
     <div class="content-header">
-      <h1>Haaai</h1>
+      <h1>WCTC Smash Team Rating</h1>
     </div>
 
     <div class="content-main">
       <form id="add">
-        <label for="new-un">Username:</label>
-        <input type="text" id="new-un" name="new-un" placeholder="Enter new player's tag..." required>
-        <label for="new-user-char">Character:</label>
-        <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." required>
-        <label for="new-user-school">School:</label>
-        <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." required>
-        <input type="submit" value="submit" onclick="alert("hai")">
+        <h2 class="section-title">Add New User</h2>
+        <div id="newp">
+          <label for="new-un">Username:</label>
+          <input type="text" id="new-un" name="new-un" placeholder="Enter new player's tag..." maxlength="28" required>
+          <label for="new-user-char">Character:</label>
+          <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." maxlength="28" required>
+          <label for="new-user-school">School:</label>
+          <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." maxlength="28" required>
+          <input type="submit" value="Submit" onclick="alert("hai")">
+        </div>
       </form>
       <form id="modify">
+        <h2 class="section-title">Update Rankings</h2>
         <div class="player" id="p1">
-          <h2>Player 1</h2>
-          <label for="p1-fname">First Name:</label>
-          <input type="text" id="p1-fname" name="p1-fname" placeholder="First name..." required>
-          <label for="p1-lname">Last Name:</label>
-          <input type="text" id="p1-lname" name="p1-lname" placeholder="Last name..." required>
+          <h3>Player 1</h3>
+          <label for="p1-user-name">Username:</label>
+          <input type="text" id="p1-user-name" name="p1-user-name" placeholder="Enter first player's tag..." maxlength="28" required>
           <label for="p1-win">Win</label>
           <input type="radio" id="p1-win" name="p1-winlose" value="Win" required>
           <label for="p1-lose">Lose</label>
           <input type="radio" id="p1-lose" name="p1-winlose" value="Lose" required>
         </div>
         <div class="player" id="p2">
-          <h2>Player 2</h2>
-          <label for="p2-fname">First Name:</label>
-          <input type="text" id="p2-fname" name="p2-fname" placeholder="First name..." required>
-          <label for="p2-lname">Last Name:</label>
-          <input type="text" id="p2-lname" name="p2-lname" placeholder="Last name..." required>
+          <h3>Player 2</h3>
+          <label for="p2-user-name">Username:</label>
+          <input type="text" id="p2-user-name" name="p2-user-name" placeholder="Enter second player's tag..." maxlength="28" required>
           <label for="p2-win">Win</label>
           <input type="radio" id="p2-win" name="p2-winlose" value="Win" required>
           <label for="p2-lose">Lose</label>
           <input type="radio" id="p2-lose" name="p2-winlose" value="Lose" required>
         </div>
-        <input type="submit" value="submit" onclick="alert(":3")">
+        <input type="submit" value="Submit" onclick="alert(":3")">
       </form>
     </div>
 
     <div class="content-footer">
-      <em>&copy; developed by [ ] | 2024</em>
+      <em>&copy; developed by Noah Strekow (paradox) | 2024</em>
     </div>
   </div>
 </body>
