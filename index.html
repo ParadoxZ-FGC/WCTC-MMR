@@ -16,16 +16,16 @@
       </div>
   
       <div class="content-main">
-        <form id="add" method="POST" action="https://script.google.com/macros/s/AKfycbxw51A6itTMEXp9Lj9Q7OkVMjDtoNsGB2GmTzLUyjqJ_wriPVn5Gm9xc6IEy5DBfb0tTg/exec">
+        <form id="add">
           <h2 class="section-title">Add New User</h2>
           <div id="newp">
             <label for="new-user-name">Username:</label>
-            <input type="text" id="new-user-name" name="new-user-name" placeholder="Enter new player's tag..." maxlength="28" required>
+            <input type="text" id="new-user-name" name="USERNAME" placeholder="Enter new player's tag..." maxlength="28" required>
             <label for="new-user-char">Character:</label>
-            <input type="text" id="new-user-char" name="new-user-char" placeholder="Enter new player's main..." maxlength="28" required>
+            <input type="text" id="new-user-char" name="CHARACTER" placeholder="Enter new player's main..." maxlength="28" required>
             <label for="new-user-school">School:</label>
-            <input type="text" id="new-user-school" name="new-user-school" placeholder="Enter new player's school..." maxlength="28" required>
-            <input type="submit" value="Submit" id="add-new-user" onclick="addUser()">
+            <input type="text" id="new-user-school" name="SCHOOL" placeholder="Enter new player's school..." maxlength="28" required>
+            <input type="submit" value="Submit" id="add-new-user">
           </div>
         </form>
         <form id="modify">
@@ -48,8 +48,24 @@
             <label for="p2-lose">Lose</label>
             <input type="radio" id="p2-lose" name="p2-winlose" value="Lose" required>
           </div>
-          <input type="submit" value="Submit" onclick="alert(":3")">
+          <input type="submit" value="Submit" id="update-ratings">
         </form>
+
+        <script>
+          const form = document.querySelector("#add")
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbxMgMkIJjL0bTs9tg8AgSFWRiobKIupBNfPiGL7JcisagxKg6hNI3ZzG7-3n8zYNr9Tfw/exec'
+
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            const responseBody = new FormData(form)
+            const TrendBody = responseBody.getAll("TRENDS").join(" ")
+            responseBody.set('TRENDS', TrendBody)
+            fetch(scriptURL, { method: 'POST', body: responseBody })
+                    .then(response => { alert('Success!', response) })
+                    .catch(error => alert('Error!', error.message))
+          })
+        </script>
       </div>
   
       <div class="content-footer">
