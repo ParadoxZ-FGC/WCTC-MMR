@@ -82,13 +82,25 @@
         </form>
 
         <script>
-          const form = document.querySelector("#add")
+          const add = document.querySelector("#add")
           const scriptURL = 'https://script.google.com/macros/s/AKfycbwjijnteWhJXPU7aPUln0JcTjQe5x6-2-YqY_uyhqIWDw-JjzYgxZN0_PbuxIUSAjLBmw/exec'
 
           form.addEventListener('submit', e => {
             e.preventDefault()
 
-            const responseBody = new FormData(form)
+            const responseBody = new FormData(add)
+            const TrendBody = responseBody.getAll("TRENDS").join(" ")
+            responseBody.set('TRENDS', TrendBody)
+            fetch(scriptURL, { method: 'POST', body: responseBody })
+                    .then(response => { alert('Success!', response) })
+                    .catch(error => alert('Error!', error.message))
+          })
+
+          const modify = document.querySelector("#modify")
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            const responseBody = new FormData(modify)
             const TrendBody = responseBody.getAll("TRENDS").join(" ")
             responseBody.set('TRENDS', TrendBody)
             fetch(scriptURL, { method: 'POST', body: responseBody })
