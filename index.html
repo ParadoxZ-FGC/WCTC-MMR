@@ -21,32 +21,47 @@
           <div id="newp">
             <label for="new-user-name">Username:</label>
             <input type="text" id="new-user-name" name="USERNAME" placeholder="Enter new player's tag..." maxlength="28" required>
-            <label for="new-user-char">Character:</label>
-            <input type="text" id="new-user-char" name="CHARACTER" placeholder="Enter new player's main..." maxlength="28" required>
+            <label>Characters:</label>
+            <datalist id="chars">
+              <option value="01. Mario"></option><option value="02. Donkey Kong"></option><option value="03. Link"></option><option value="04. Samus"></option>
+              <option value="04.1 Dark Samus"></option><option value="05. Yoshi"></option><option value="06. Kirby"></option><option value="07. Fox"></option>
+              <option value="08. Pikachu"></option><option value="09. Luigi"></option><option value="10. Ness"></option><option value="11. Captain Falcon"></option>
+              <option value="12. Jigglypuff"></option><option value="13. Peach"></option><option value="13.1 Daisy"></option><option value="14. Bowser"></option>
+              <option value="15. Ice Climbers"></option><option value="16. Sheik"></option><option value="17. Zelda"></option><option value="18. Dr. Mario"></option>
+              <option value="19. Pichu"></option><option value="20. Falco"></option><option value="21. Marth"></option><option value="21.1 Lucina"></option>
+              <option value=""></option>
+            </datalist>
+            <input placeholder="None" autocomplete="on" list="chars" name="MAIN"> / <input placeholder="None" autocomplete="on" list="chars" name="SECOND">
+            <br><br>
             <label for="new-user-school">School:</label>
             <input type="text" id="new-user-school" name="SCHOOL" placeholder="Enter new player's school..." maxlength="28" required>
+            <label for="new-user-opt-in">Opt: In</label>
+            <input type="radio" id="new-user-opt-in" name="OPT" value="IN" required>
+            <label for="new-user-opt-out">Out</label>
+            <input type="radio" id="new-user-opt-out" name="OPT" value="OUT" required>
+            to public leaderboard.
+            <br><br>
             <input type="submit" value="Submit" id="add-new-user">
           </div>
         </form>
+
         <form id="modify">
           <h2 class="section-title">Update Rankings</h2>
-          <div class="player" id="p1">
-            <h3>Player 1</h3>
-            <label for="p1-user-name">Username:</label>
-            <input type="text" id="p1-user-name" name="p1-user-name" placeholder="Enter first player's tag..." maxlength="28" required>
-            <label for="p1-win">Win</label>
-            <input type="radio" id="p1-win" name="p1-winlose" value="Win" required>
-            <label for="p1-lose">Lose</label>
-            <input type="radio" id="p1-lose" name="p1-winlose" value="Lose" required>
-          </div>
-          <div class="player" id="p2">
-            <h3>Player 2</h3>
-            <label for="p2-user-name">Username:</label>
-            <input type="text" id="p2-user-name" name="p2-user-name" placeholder="Enter second player's tag..." maxlength="28" required>
-            <label for="p2-win">Win</label>
-            <input type="radio" id="p2-win" name="p2-winlose" value="Win" required>
-            <label for="p2-lose">Lose</label>
-            <input type="radio" id="p2-lose" name="p2-winlose" value="Lose" required>
+          <div class="players">
+            <div class="player" id="p1">
+              <h3>Player 1</h3>
+              <label for="p1-user-name">Username:</label>
+              <input type="text" id="p1-user-name" name="p1-user-name" placeholder="Enter first player's tag..." maxlength="28" required>
+              <label for="p1-win">Win</label>
+              <input type="radio" id="p1-win" name="p1-winlose" value="Win" required>
+              <label for="p1-lose">Lose</label>
+              <input type="radio" id="p1-lose" name="p1-winlose" value="Lose" required>
+            </div>
+            <div class="player" id="p2">
+              <h3>Player 2</h3>
+              <label for="p2-user-name">Username:</label>
+              <input type="text" id="p2-user-name" name="p2-user-name" placeholder="Enter second player's tag..." maxlength="28" required>
+            </div>
           </div>
           <input type="submit" value="Submit" id="update-ratings">
         </form>
