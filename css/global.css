@@ -29,6 +29,10 @@ div.content-header h1 {
 }
 
 
+.section-title {
+  padding-bottom: 2px;
+  border-bottom: solid 2px black;
+}
 form {
   padding: 4px 2em 1em 2em;
   margin: 2em 0;
@@ -37,21 +41,27 @@ form {
   border-style: groove;
   box-shadow: 0 0 8px rgba(0,0,0,1);
 }
-.section-title {
-  padding-bottom: 2px;
-  border-bottom: solid 2px black;
+select {
+  margin-right:4px;
+}
+
+div#newp {
+  width: 1012px;
+  padding: 10px 8px 10px 18px;
 }
 div.player, div#newp {
-  width: 450px;
-  margin: 1em 0;
-  padding: 6px 2em 1em 1.5em;
+  margin: 0 0 1em 0;
   background-color: lightgray;
   border-radius: 6px;
   box-shadow: 4px 4px 6px rgba(0,0,0,0.6);
 }
-div#newp {
-  width: 1018px;
-  padding: 10px 8px 10px 12px;
+div.player {
+  width: 440px;
+  padding: 6px 2em 1em 1.5em;
+}
+.players {
+  display: flex;
+  justify-content: space-between;
 }
 
 input[type=text] {
@@ -61,6 +71,9 @@ input[type=text] {
   border: none;
   border-bottom: solid 2px black;
   border-radius: 0;
+}
+input[type=text]#new-user-name {
+  width: 200px;
 }
 input[type=text]:focus {
   outline: none;
