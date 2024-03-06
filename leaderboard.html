@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="icon" type="image/png" href="assets/smash_ball.png">
+        <title>WCTC MMR Info Submission</title>
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="content-header">
+                <h1>WCTC Smash Team Rating</h1>
+            </div>
+
+            <div class="content-main">
+                <table id="leaderboard">
+
+                </table>
+                <script>
+                fetch('https://script.google.com/macros/s/your_web_app_id/exec')
+                  .then(response => response.json())
+                  .then(data => {
+                    // Update HTML with fetched data
+                    document.getElementById('data').innerText = JSON.stringify(data);
+                  })
+                  .catch(error => console.error('Error fetching data:', error));
+                </script>
+            </div>
+            
+
+            <div class="content-footer">
+                <em>&copy; developed by Noah Strekow (paradox) | 2024</em>
+            </div>
+        </div>
+    </body>
+</html>
