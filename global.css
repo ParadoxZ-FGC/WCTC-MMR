@@ -1,0 +1,109 @@
+/* Global CSS */
+* {
+  font-family: "Trebuchet MS";
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+div.content {
+  max-width: 1100px;
+  margin: 2em auto;
+  padding: 3em;
+  background-color: gray;
+  border-radius: 4em;
+}
+
+
+div.content-header {
+  width: 450px;
+  padding: 2px 2em;
+  background-color: white;
+  border-radius: 2em;
+  border-style: groove;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+div.content-header h1 {
+  padding-bottom: 4px;
+  border-bottom: solid 4px black;
+}
+
+
+.section-title {
+  padding-bottom: 2px;
+  border-bottom: solid 2px black;
+}
+form {
+  padding: 4px 2em 1em 2em;
+  margin: 2em 0;
+  background-color: white;
+  border-radius: 1em;
+  border-style: groove;
+  box-shadow: 0 0 8px rgba(0,0,0,1);
+}
+select {
+  margin-right:4px;
+}
+
+div#new {
+  width: 1012px;
+  padding: 10px 8px 10px 18px;
+}
+div.player, div.amiibo, div#new {
+  margin: 0 0 1em 0;
+  background-color: lightgray;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+}
+div.player {
+  width: 410px;
+  padding: 6px 2em 1em 1.5em;
+}
+div.amiibo {
+  width: 380px;
+  padding: 6px 2em 1em 1.5em;
+}
+.players {
+  display: flex;
+  justify-content: space-between;
+}
+.vs {
+  font-size: xx-large;
+}
+
+input[type=text] {
+  width: 225px;
+  margin-right: 8px;
+  background-color: lightgray;
+  border: none;
+  border-bottom: solid 2px black;
+  border-radius: 0;
+}
+input[type=text]#new-user-name {
+  width: 200px;
+}
+input[type=text]:focus {
+  outline: none;
+}
+input[placeholder] {
+  font-family: "Courier New";
+}
+input[type=submit] {
+  margin-left: 6px;
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+}
+
+
+.content-footer {
+  text-align: center;
+}
+
+
+
+@media screen and (max-width=1024px) {
+  div.content {
+    max-width: 840px;
+  }
+}
