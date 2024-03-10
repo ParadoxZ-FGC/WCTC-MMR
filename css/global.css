@@ -45,23 +45,30 @@ select {
   margin-right:4px;
 }
 
-div#newp {
+div#new {
   width: 1012px;
   padding: 10px 8px 10px 18px;
 }
-div.player, div#newp {
+div.player, div.amiibo, div#new {
   margin: 0 0 1em 0;
   background-color: lightgray;
   border-radius: 6px;
   box-shadow: 4px 4px 6px rgba(0,0,0,0.6);
 }
 div.player {
-  width: 440px;
+  width: 410px;
+  padding: 6px 2em 1em 1.5em;
+}
+div.amiibo {
+  width: 380px;
   padding: 6px 2em 1em 1.5em;
 }
 .players {
   display: flex;
   justify-content: space-between;
+}
+.vs {
+  font-size: xx-large;
 }
 
 input[type=text] {
