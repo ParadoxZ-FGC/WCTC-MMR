@@ -35,6 +35,7 @@
   </datalist>
 
   <body>
+    <img src="assets/smash_ball_w.png" id="ball" width="80px" height="80px">
     <div class="content">
       <div class="content-header">
         <h1>WCTC Smash Team Rating</h1>
@@ -47,11 +48,13 @@
             <div id="new">
               <label for="new-user-name">Username:</label>
               <input type="text" id="new-user-name" name="USERNAME" placeholder="Enter new player's tag..." maxlength="28">
+              &emsp;
               <label>Characters:</label>
               <input placeholder="None" autocomplete="on" list="chars" name="MAIN"> / <input placeholder="None" autocomplete="on" list="chars" name="SECOND">
               <br><br>
               <label for="new-user-school">School:</label>
               <input type="text" id="new-user-school" name="SCHOOL" placeholder="Enter new player's school..." maxlength="28">
+              &emsp;
               <label for="new-user-opt-in">Opt: In</label>
               <input type="radio" id="new-user-opt-in" name="OPT" value="IN">
               <label for="new-user-opt-out">Out</label>
@@ -85,12 +88,15 @@
             </div>
           </div>
 
+          <br>
+          <label for="pass">Passcode:</label>
+          <input type="text" name="pass" id="pass" maxlength="10" required>
           <input type="submit" value="Submit" id="submit-form">
         </form>
         
         <script>
           const form = document.querySelector("#form")
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbw9BBz7BEGdDNRD_nD-LafeKOK6Tga2u6pI_3KJSmHiLFpfeubE8zYVhi5gxdzPc_jlyQ/exec'
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzDUo6efePtTlE3TUo8MfGmn8s5bPyXg8FuRON4Xzddyc7tXu5yPABCjhG0pGzJt3tRFw/exec'
 
           form.addEventListener('submit', e => {
             e.preventDefault()
