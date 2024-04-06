@@ -10,6 +10,7 @@
   </head>
   
   <datalist id="chars">
+    <option value="None"></option>
     <option value="01. Mario"></option><option value="02. Donkey Kong"></option><option value="03. Link"></option><option value="04. Samus"></option>
     <option value="04.1 Dark Samus"></option><option value="05. Yoshi"></option><option value="06. Kirby"></option><option value="07. Fox"></option>
     <option value="08. Pikachu"></option><option value="09. Luigi"></option><option value="10. Ness"></option><option value="11. Captain Falcon"></option>
@@ -42,7 +43,7 @@
       </div>
   
       <div class="content-main">
-        <form id="form">
+        <form id="form" action="https://script.google.com/macros/s/AKfycbwvt0WFFVG7XawxbPPwMkyLTL1RewSKSuFcTUZv-0CGU8AKIl15FdO-fDo0jUbB6DavFg/exec" method="post" onsubmit="alert('Form submitted, check sheets to assure correct submission!')">
           <div class="form-section">
             <h2 class="section-title">Add New Player</h2>
             <div id="new">
@@ -93,22 +94,6 @@
           <input type="text" name="pass" id="pass" maxlength="10" required>
           <input type="submit" value="Submit" id="submit-form">
         </form>
-        
-        <script>
-          const form = document.querySelector("#form")
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbzDUo6efePtTlE3TUo8MfGmn8s5bPyXg8FuRON4Xzddyc7tXu5yPABCjhG0pGzJt3tRFw/exec'
-
-          form.addEventListener('submit', e => {
-            e.preventDefault()
-
-            const responseBody = new FormData(form)
-            const TrendBody = responseBody.getAll("TRENDS").join(" ")
-            responseBody.set('TRENDS', TrendBody)
-            fetch(scriptURL, { method: 'POST', body: responseBody })
-                    .then(response => { alert('Success!', response) })
-                    .catch(error => alert('Error!', error.message))
-          })
-        </script>
       </div>
   
       <div class="content-footer">
